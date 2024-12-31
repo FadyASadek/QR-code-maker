@@ -107,6 +107,10 @@
     font-style: italic;
 }
 
+
+
+
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -121,50 +125,57 @@ body {
 }
 
 .qr-code {
-    height: 260px; ;
-    min-width: 410px;
+    height: 260px;
+    width: 410px;
     background-color: white;
     padding: 16px 25px;
     border-radius: 7px;
     transition: height 0.2s ease;
 }
-.qr-code.active{
-height: 550px;
+
+.qr-code.active {
+    height: 550px;
 }
 
-header h1{
-font-size: 21px;
-font-weight: 500;
+header h1 {
+    font-size: 21px;
+    font-weight: 500;
 }
-header p{
+
+header p {
     font-size: 16px;
     color: #474747;
-    margin-top:5px ;
+    margin-top: 5px;
 }
-.qr-code .form{
+
+.qr-code .form {
     margin: 20px 0 25px;
 }
-.form :where(input , button){
+
+.form :where(input, button) {
     border: none;
     outline: none;
     width: 100%;
     height: 55px;
     border-radius: 5px;
 }
-.form input{
+
+.form input {
     border: 1px solid #999;
     font-size: 18px;
     padding: 0 17px;
     width: 91%;
 }
-.form button{
+
+.form button {
     margin-top: 20px;
     background-color: #3498db;
     color: #fff;
     cursor: pointer;
     font-size: 17px;
 }
-.qr-code .img{
+
+.qr-code .img {
     display: flex;
     opacity: 0;
     pointer-events: none;
@@ -174,7 +185,8 @@ header p{
     justify-content: center;
     border: 1px solid #ccc;
 }
-.qr-code.active .img{
+
+.qr-code.active .img {
     opacity: 1;
     pointer-events: auto;
     transition: opacity 0.5s 0.5s ease;
